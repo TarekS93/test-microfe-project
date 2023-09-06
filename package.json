@@ -37,7 +37,7 @@
     "husky": "^7.0.4",
     "immer": "^9.0.12",
     "lodash": "^4.17.21",
-    "ngx-build-plus": "^13.0.1",
+    "ngx-build-plus": "^14.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "uuid": "^9.0.0",
