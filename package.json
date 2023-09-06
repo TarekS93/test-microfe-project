@@ -5,7 +5,7 @@
     "commit": "cz",
     "ng": "ng",
     "start": "ng serve --port 4202 --proxy-config src/proxy.conf.json",
-    "build": "ng build",
+    "build": "ng build"
   },
   "private": false,
   "dependencies": {
