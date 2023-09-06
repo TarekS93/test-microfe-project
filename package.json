@@ -1,0 +1,97 @@
+{
+  "name": "test-microfe-project",
+  "version": "0.0.0",
+  "scripts": {
+    "commit": "cz",
+    "ng": "ng",
+    "start": "ng serve --port 4202 --proxy-config src/proxy.conf.json",
+    "build": "ng build",
+  },
+  "private": false,
+  "dependencies": {
+    "@angular-architects/module-federation": "~14.2.2",
+    "@angular/animations": "~13.3.1",
+    "@angular/common": "~13.3.1",
+    "@angular/compiler": "~13.3.1",
+    "@angular/core": "~13.3.1",
+    "@angular/forms": "~13.3.1",
+    "@angular/platform-browser": "~13.3.1",
+    "@angular/platform-browser-dynamic": "~13.3.1",
+    "@angular/router": "~13.3.1",
+    "@fortawesome/angular-fontawesome": "0.10.2",
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@ng-bootstrap/ng-bootstrap": "^11.0.0",
+    "@ngrx/effects": "^13.1.0",
+    "@ngrx/store": "^13.1.0",
+    "@ngrx/store-devtools": "^13.0.2",
+    "angular-calendar": "^0.29.0",
+    "bootstrap": "^4.5.0",
+    "core-js": "^3.32.1",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.6",
+    "express": "^4.18.2",
+    "file-saver": "^2.0.5",
+    "husky": "^7.0.4",
+    "immer": "^9.0.12",
+    "lodash": "^4.17.21",
+    "ngx-build-plus": "^13.0.1",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.3.0",
+    "uuid": "^9.0.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~13.3.1",
+    "@angular/cli": "~13.3.1",
+    "@angular/compiler-cli": "~13.3.1",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/file-saver": "^2.0.5",
+    "@types/jasmine": "~3.8.0",
+    "@types/node": "^12.11.1",
+    "@types/uuid": "^8.3.4",
+    "commitizen": "^4.2.4",
+    "css-loader": "^6.7.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint-config-prettier": "^7.2.0",
+    "jasmine-core": "~3.8.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "postcss-loader": "^6.2.1",
+    "prettier": "^2.2.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "sass-resources-loader": "^2.2.5",
+    "standard-version": "^9.5.0",
+    "style-loader": "^3.3.1",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "~4.6.3"
+  },
+  "overrides": {
+    "semver": "^7.5.3"
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss,less,md,ts,html,component.html}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "prebump": "if test -f package-lock.json; then mv package-lock.json package-lock-IGNORE.json; else exit 0; fi | bash",
+      "posttag": "if test -f package-lock-IGNORE.json; then mv package-lock-IGNORE.json package-lock.json; else exit 0; fi | bash"
+    }
+  }
+}
